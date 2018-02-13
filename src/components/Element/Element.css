@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+* {
+  box-sizing: border-box;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 300;
+  font-family: sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+ul,
+dl,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  text-align: inherit;
+  letter-spacing: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  color: inherit; }
+
+.Element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px; }
+  .safari .Element {
+    perspective: none; }
+  .Element.active {
+    background-color: #ef5350;
+    color: #fafafa;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11); }
+  .Element > * {
+    margin-bottom: 0.5rem; }
+  .Element .number {
+    font-size: 1rem; }
+  .Element .symbol {
+    font-size: 2.2rem; }
+  .Element .name {
+    font-size: 0.9rem;
+    text-transform: uppercase; }
+  .Element .mass {
+    font-size: 1rem; }
+  .Element:hover {
+    z-index: 2;
+    cursor: pointer;
+    transform: scale(1.1);
+    outline-color: #24495a;
+    outline-width: 2px; }

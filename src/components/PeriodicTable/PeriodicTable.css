@@ -1,24 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Patua+One");
+* {
+  box-sizing: border-box;
+  font-family: 'Patua One', cursive;
+  letter-spacing: 1px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  font-weight: 300;
+  font-family: sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+ul,
+dl,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li,
+dt,
+dd {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  padding: 0;
+  text-align: inherit;
+  letter-spacing: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  color: inherit; }
+
 .PeriodicTable {
-  margin: 2rem; }
+  padding: 3rem;
+  margin: 0 auto;
+  max-width: 1280px; }
   .PeriodicTable .table {
     display: grid;
     grid-template-columns: repeat(18, minmax(50px, 1fr));
     grid-gap: 0.3rem; }
   .PeriodicTable .mainTable .white-space-1 {
-    grid-column: 2 / 18;
+    grid-column: 2 / 9;
     grid-row: 1; }
+  .PeriodicTable .mainTable .type-of {
+    grid-column: 13/ 18;
+    grid-row: 1;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 2.3rem;
+    text-transform: capitalize; }
+  .PeriodicTable .mainTable .Legend {
+    grid-column: 9/ 13;
+    grid-row: 1/ 4; }
+  .PeriodicTable .mainTable .DetailedElement {
+    grid-column: 3/ 9;
+    grid-row: 1 /4; }
   .PeriodicTable .mainTable .white-space-2 {
-    grid-column: 3 / 13;
+    grid-column: 3 / 9;
     grid-row: 2; }
   .PeriodicTable .mainTable .white-space-3 {
-    grid-column: 3 / 13;
+    grid-column: 3 / 9;
     grid-row: 3; }
   .PeriodicTable .mainTable .detach-1 {
     grid-column: 3 / 4;
-    grid-row: 6; }
+    grid-row: 6;
+    background-color: #FCF5A5; }
   .PeriodicTable .mainTable .detach-2 {
     grid-column: 3 / 4;
-    grid-row: 7; }
+    grid-row: 7;
+    background-color: #FBB42D; }
+  .PeriodicTable .mainTable .detach-1, .PeriodicTable .mainTable .detach-2 {
+    display: grid;
+    place-items: center center;
+    color: #24495a;
+    font-size: 1.2rem; }
   .PeriodicTable .secondTable {
     margin-top: 4rem; }
     .PeriodicTable .secondTable .white-space-1 {
@@ -27,32 +115,3 @@
     .PeriodicTable .secondTable .white-space-2 {
       grid-column: 1 / 4;
       grid-row: 2; }
-  .PeriodicTable .element {
-    max-height: 65px;
-    transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1); }
-    .PeriodicTable .element .Normal {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-    .PeriodicTable .element > * {
-      margin-bottom: 0.5rem; }
-    .PeriodicTable .element .number {
-      font-size: 1rem; }
-    .PeriodicTable .element .symbol {
-      font-size: 2.2rem; }
-    .PeriodicTable .element .name {
-      font-size: 0.9rem;
-      text-transform: uppercase; }
-    .PeriodicTable .element .mass {
-      font-size: 1rem; }
-    .PeriodicTable .element .Hover {
-      display: none; }
-    .PeriodicTable .element:hover {
-      display: block;
-      z-index: 2;
-      cursor: pointer;
-      transform: scale(1.5); }
-      .PeriodicTable .element:hover .Normal {
-        display: none; }
-      .PeriodicTable .element:hover .Hover {
-        display: inherit; }

@@ -1,0 +1,14 @@
+@import '../../style/shared.scss';
+
+.Legend{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    .single-color{
+        display:flex;
+        align-items:center;
+        margin-bottom:1.2rem;
+        margin-right:1.2rem;
+        //transform: rotate(-30deg);
+    }
+}

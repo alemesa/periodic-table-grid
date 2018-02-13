@@ -1,0 +1,10 @@
+@import 'vars.scss';
+
+@mixin gpu {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    .safari & {
+      perspective: none; // otherwise text and icons become blurry
+    }
+  }

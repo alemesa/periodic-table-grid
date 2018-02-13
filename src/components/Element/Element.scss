@@ -1,0 +1,41 @@
+
+@import '../../style/shared.scss';
+
+.Element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s all $bezier;
+    @include gpu();
+
+    &.active{
+        background-color:#ef5350;
+        color:rgba(250,250,250 ,1);
+        box-shadow: 0 4px 6px rgba(50,50,93,.11);
+    }
+
+    >* {
+        margin-bottom: 0.5rem;
+    }
+    .number {
+        font-size: 1rem;
+    }
+    .symbol {
+        font-size: 2.2rem;
+    }
+    .name {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+    .mass {
+        font-size: 1rem;
+    }
+    &:hover {
+        z-index: 2;
+        cursor: pointer;
+        transform: scale(1.10);
+        outline-color: $font-color;
+        outline-width: 2px;
+
+    }
+}

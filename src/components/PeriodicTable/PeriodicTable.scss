@@ -1,5 +1,11 @@
+@import '../../style/shared.scss';
+
 .PeriodicTable {
-    margin: 2rem;
+    padding:3rem;
+    margin: 0 auto;
+    max-width:1280px;
+
+
     .table {
         display: grid;
         grid-template-columns: repeat(18, minmax(50px, 1fr));
@@ -7,24 +13,50 @@
     }
     .mainTable {
         .white-space-1 {
-            grid-column: 2 / 18;
+            grid-column: 2 / 9;
             grid-row: 1;
         }
+        .type-of{
+            grid-column: 13/ 18;
+            grid-row:1;
+            display:grid;
+            justify-items: center;
+            align-items: center;
+            color:white;
+            font-size:2.3rem;
+            text-transform: capitalize;
+        }
+        .Legend{
+            grid-column: 9/ 13;
+            grid-row: 1/ 4;
+        }
+        .DetailedElement{
+            grid-column: 3/ 9;
+            grid-row: 1 /4;
+        }
         .white-space-2 {
-            grid-column: 3 / 13;
+            grid-column: 3 / 9;
             grid-row: 2;
         }
         .white-space-3 {
-            grid-column: 3 / 13;
+            grid-column: 3 / 9;
             grid-row: 3;
         }
         .detach-1 {
             grid-column: 3 / 4;
             grid-row: 6;
+            background-color:#FCF5A5;
         }
         .detach-2 {
             grid-column: 3 / 4;
             grid-row: 7;
+            background-color:#FBB42D;
+        }
+        .detach-1, .detach-2{
+            display:grid;
+            place-items:center center;
+            color: $font-color;
+            font-size:1.2rem;
         }
     }
     .secondTable {
@@ -38,35 +70,5 @@
             grid-row: 2;
         }
     }
-    .element {
-        max-height: 65px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1);
-        >* {
-            margin-bottom: 0.5rem;
-        }
-        .number {
-            font-size: 1rem;
-        }
-        .symbol {
-            font-size: 2.2rem;
-        }
-        .name {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-        }
-        .mass {
-            font-size: 1rem;
-        }
-        .Hover {
-            display: none;
-        }
-        &:hover {
-            z-index: 2;
-            cursor: pointer;
-            transform: scale(1.2);
-        }
-    }
+
 }

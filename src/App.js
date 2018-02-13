@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import PeriodicTable from './components/PeriodicTable/PeriodicTable';
-import OverlayElement from './components/OverlayElement/OverlayElement';
+import DetailedElement from './components/DetailedElement/DetailedElement';
 import pt from 'periodic-table';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: 1
+    };
+  }
   componentWillMount() {
     this.elements = pt.all();
     this.firstTable = this.elements.filter(
@@ -17,8 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PeriodicTable elements={this.elements} firstTable={this.firstTable} secondTable={this.secondTable} />
-        <OverlayElement />
+        <PeriodicTable firstTable={this.firstTable} secondTable={this.secondTable} />
       </div>
     );
   }
