@@ -5,6 +5,8 @@
   "dependencies": {
     "@jam3/gsap-promise": "^4.0.1",
     "classnames": "^2.2.5",
+    "gulp": "^3.9.1",
+    "gulp-surge": "^0.1.0",
     "node-sass-chokidar": "^0.0.3",
     "npm-run-all": "^4.1.2",
     "periodic-table": "0.0.8",
