@@ -77,8 +77,8 @@ class PeriodicTable extends Component {
           ))}
           <div className="white-space-1" />
           <div className="white-space-2" />
-          <div className="columns-count">{this.columns.map(x => <div>{x}</div>)}</div>
-          <div className="rows-count">{this.rows.map(x => <div>{x}</div>)}</div>
+          {/* <div className="columns-count">{this.columns.map(x => <div>{x}</div>)}</div>
+          <div className="rows-count">{this.rows.map(x => <div>{x}</div>)}</div> */}
         </div>
       </div>
     );

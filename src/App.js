@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Title from './components/Title/Title';
 import PeriodicTable from './components/PeriodicTable/PeriodicTable';
 import DetailedElement from './components/DetailedElement/DetailedElement';
 import pt from 'periodic-table';
@@ -23,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Title />
         <PeriodicTable firstTable={this.firstTable} secondTable={this.secondTable} />
       </div>
     );
