@@ -17,6 +17,8 @@ class PeriodicTable extends Component {
       id: 1,
       element: {}
     };
+    this.columns = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+    this.rows = [1, 2, 3, 4, 5, 6, 7];
   }
 
   passUp = async event => {
@@ -75,6 +77,8 @@ class PeriodicTable extends Component {
           ))}
           <div className="white-space-1" />
           <div className="white-space-2" />
+          <div className="columns-count">{this.columns.map(x => <div>{x}</div>)}</div>
+          <div className="rows-count">{this.rows.map(x => <div>{x}</div>)}</div>
         </div>
       </div>
     );

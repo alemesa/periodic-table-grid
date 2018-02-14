@@ -58,6 +58,14 @@
             color: $font-color;
             font-size:1.2rem;
         }
+        .columns-count{
+            //grid-column: 1/-1;
+            //grid-row:1;
+        }
+        .rows-count{
+            //grid-column:1/1;
+            //grid-row:1/-1;
+        }
     }
     .secondTable {
         margin-top: 4rem;
