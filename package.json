@@ -11,7 +11,7 @@
     "npm-run-all": "^4.1.2",
     "periodic-table": "0.0.8",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react-dom": "^16.8.6",
     "react-overdrive": "0.0.9",
     "react-scripts": "1.1.1",
     "styled-components": "^3.1.6"
